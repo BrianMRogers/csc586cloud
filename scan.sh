@@ -7,7 +7,7 @@ monthArr=()
 dayArr=()
 countryArr=()
 
-while read -r line; do   monthArr+= cut -d " " -f 1 dayArr+= cut -d " " -f 2 echo "$line" ; done < output
+while read -r line; do   monthArr+= cut -d " " -f 1 dateArr+= cut -d " " -f 2 echo "$line" ; done < output
 
 #Translate IP using geoiplookup library
 
@@ -15,6 +15,5 @@ while read -r line; do   monthArr+= cut -d " " -f 1 dayArr+= cut -d " " -f 2 ech
 
 #Finally clear arrays when finished
 ipArr=()
-monthArr=()
-dayArr=()
+dateArr=()
 countryArr=()
